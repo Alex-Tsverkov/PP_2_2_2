@@ -1,6 +1,5 @@
-package web.config.model.service;
+package web.config;
 
-import web.config.model.Car;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
