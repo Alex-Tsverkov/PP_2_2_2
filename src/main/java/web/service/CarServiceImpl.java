@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Service
-public class CarService {
+public class CarServiceImpl implements CarService {
     private final List<Car> cars = Arrays.asList(
             new Car("Toyota", "GT", 2025),
             new Car("Nissan", "GTR", 2022),
@@ -23,4 +23,8 @@ public class CarService {
         }
         return cars.stream().limit(count).collect(Collectors.toList());
     }
+    public List<Car> getCars() {
+        return this.cars;
+    }
+
 }

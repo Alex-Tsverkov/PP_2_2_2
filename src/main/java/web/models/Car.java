@@ -1,4 +1,4 @@
-package web.config.models;
+package web.models;
 
 public class Car {
     private String brand;
